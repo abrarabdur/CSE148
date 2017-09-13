@@ -1,0 +1,17 @@
+package test;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int i = 10;
+		int[] numbers = { 1, 2, 3, 4};
+		justDoIt(i, numbers);
+	}
+	
+	private static void justDoIt(int n, int[] nums) {
+		n = 10;
+		nums[0] = 100;
+		System.out.println("n = " + n + "\t" + "nums[0] = " + nums[0]);
+	}
+
+}

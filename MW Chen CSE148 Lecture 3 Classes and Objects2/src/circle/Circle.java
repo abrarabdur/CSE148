@@ -2,15 +2,21 @@ package circle;
 
 public class Circle {
 	private double radius;
+	private static int numberOfCircles = 0;
 	
 	
 	//overloaded constructors
 	public Circle() {
-		
+		numberOfCircles++;
 	}
 	
 	public Circle(double newRadius){
 		radius = newRadius;
+		numberOfCircles++;
+	}
+	
+	public int getNumberOfCircles() {
+		return numberOfCircles;
 	}
 	
 	public double getArea() {
