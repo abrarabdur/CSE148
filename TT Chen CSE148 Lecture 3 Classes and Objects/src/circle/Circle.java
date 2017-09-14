@@ -1,33 +1,33 @@
 package circle;
 
 public class Circle {
-	double radius;
+	private double radius;
 	
 	
 	//overloaded constructors
-	Circle() {
+	public Circle() {
 		
 	}
 	
-	Circle(double newRadius){
-		radius = newRadius;
+	public Circle(double radius){
+		this.radius = radius;
 	}
 	
-	double getArea() {
+	public double getArea() {
 		return Math.PI * radius * radius;
 	}
 	
-	double getCircumference() {
+	public double getCircumference() {
 		return Math.PI * 2 * radius;
 	}
 	
 	// setter method, mutator
-	void setRadius(double newRadius) {
+	public void setRadius(double newRadius) {
 		radius = newRadius;
 	}
 	
 	// getter method, accessor
-	double getRadius() {
+	public double getRadius() {
 		return radius;
 	}
 	

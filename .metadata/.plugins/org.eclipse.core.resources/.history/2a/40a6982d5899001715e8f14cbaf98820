@@ -1,0 +1,19 @@
+package sample1;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		s1.setName("Adam");
+		s1.setId(0);
+		s1.setGpa(4.0);
+		System.out.println(s1);
+		
+		Student s2 = new Student("Billy", 1, 3.5);
+		System.out.println(s2);
+		s2.setGpa(3.20);
+		System.out.println(s2);
+		
+	}
+
+}
