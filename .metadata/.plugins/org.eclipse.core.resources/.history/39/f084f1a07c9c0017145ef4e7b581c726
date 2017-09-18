@@ -10,8 +10,8 @@ public class Circle {
 		numberOfCircles++;
 	}
 	
-	public Circle(double radius){
-		this.radius = radius;
+	public Circle(double newRadius){
+		radius = newRadius;
 		numberOfCircles++;
 	}
 	
@@ -20,7 +20,7 @@ public class Circle {
 	}
 	
 	public double getArea() {
-		return Math.PI * this.radius * radius;
+		return Math.PI * radius * radius;
 	}
 	
 	public double getCircumference() {
@@ -28,8 +28,8 @@ public class Circle {
 	}
 	
 	// setter method, mutator
-	public void setRadius(double radius) {
-		this.radius = radius;
+	public void setRadius(double newRadius) {
+		radius = newRadius;
 	}
 	
 	// getter method, accessor
