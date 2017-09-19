@@ -1,37 +1,43 @@
 package sample1;
 
+import java.util.Arrays;
+
 public class Demo {
 
 	public static void main(String[] args) {
-//		Student s1 = new Student();
-//		s1.setName("Adam");
-//		s1.setId(0);
-//		s1.setGpa(4.0);
-//		System.out.println(s1);
-//		s1.setName("Zack");
-//		
-//		Student s2 = new Student("Billy", 1, 3.5);
-//		System.out.println(s2);
-//		s2.setGpa(3.20);
-//		System.out.println(s2);
-//		
-//		Student s3 = new Student("Cathy", 2, 0.0);
-//		System.out.println(s3);
-//		
-//		Student[] students = new Student[5];
-//		students[0] = s1;
-//		students[1] = s2;
-//		students[2] = s3;
-//		for(int i = 0; i < 3; i++) {
-//			System.out.println(students[i].getName());
-//		}
-//		
-		Textbook b1 = new Textbook("Intro to Java", "12345", 150.99);
-		b1.setAll("Intro to HTML", "54321", 19.99);
-		Textbook b2 = b1;
-		b1 = null;
-		b2 = null;
 		
+		Course cse148 = new Course("CSE148", "Object Oriented Programming");
+		
+		//create a classroom 
+		Classroom r212 = new Classroom("R212", 27, true);
+		cse148.setClassroom(r212);
+		
+		// create a textbook
+		Textbook javaBook = new Textbook("Intro to Java","123456789", 149.99);
+		cse148.setTextbook(javaBook);
+		
+		// add an instructor
+		cse148.setFaculty(new Faculty("Ben", "Chen"));
+		cse148.getFaculty().setRank("Professor");
+		cse148.getFaculty().setSalary(10000.99);
+		cse148.getFaculty().getName().setmInitial('A');
+		
+		// create a bunch of students
+		Student s1 = new Student("Adam",'s', "Family");
+		Student s2 = new Student("Billy", "Joe");
+		Student s3 = new Student("Cathy",'B', "Doe");
+		Student s4 = new Student("John", "Doe");
+		
+		Student[] students = {s1, s2, s3, s4};
+		
+		cse148.setStudents(students);
+		
+		
+		
+		System.out.println(cse148);
+		
+		System.out.println("Student Information:");
+		System.out.println(Arrays.toString(cse148.getStudents()));
 	}
 
 }

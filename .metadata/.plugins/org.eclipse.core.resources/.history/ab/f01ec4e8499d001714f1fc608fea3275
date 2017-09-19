@@ -1,0 +1,25 @@
+package sample1;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Course cse148 = new Course("CSE148", "Object Oriented Programming");
+		
+		//create a classroom 
+		Classroom r212 = new Classroom("R212", 27, true);
+		cse148.setClassroom(r212);
+		
+		// creater a textbook
+		Textbook javaBook = new Textbook("Intro to Java","123456789", 149.99);
+		cse148.setTextbook(javaBook);
+		
+		// add an instructor
+		cse148.setFaculty(new Faculty("Ben", "Chen"));
+		cse148.getFaculty().setRank("Professor");
+		cse148.getFaculty().setSalary(10000.99);
+		
+		System.out.println(cse148);
+	}
+
+}

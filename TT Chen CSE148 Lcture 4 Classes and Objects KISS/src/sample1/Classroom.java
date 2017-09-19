@@ -28,7 +28,7 @@ public class Classroom {
 		this.capacity = capacity;
 	}
 
-	public boolean isHasProjector() {
+	public boolean getHasProjector() {
 		return hasProjector;
 	}
 

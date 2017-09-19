@@ -1,33 +1,45 @@
 package sample1;
 
 public class Student {
-	private String name;
-	private int id;
+	private Name name;
+	private String id;
 	private double gpa;
 
-	public Student(String name, int id, double gpa) {
-		this.name = name;
-		this.id = id;
-		this.gpa = gpa;
+	private static int idCounter;
+
+	public Student(String fName, String lName) {
+		idCounter++;
+		id = String.valueOf(idCounter);
+		this.name = new Name(fName, lName);
+	}
+	
+	public Student(String fName, char mInitial, String lName) {
+		idCounter++;
+		id = String.valueOf(idCounter);
+		this.name = new Name(fName, mInitial, lName);
 	}
 
 	public Student() {
 	}
 
-	public String getName() {
+	public Name getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String fName, char mInitial, String lName) {
+		name = new Name(fName, mInitial, lName);
+	}
+	
+	public void setName(String fName, String lName) {
+		name = new Name(fName, lName);
+	}
+	
+	public void setName(Name name) {
 		this.name = name;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public double getGpa() {

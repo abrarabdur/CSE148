@@ -1,0 +1,15 @@
+package sample1;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Course cse148 = new Course("CSE148", "Object Oriented Programming");
+		
+		//create a classroom 
+		Classroom r212 = new Classroom("R212", 27, true);
+		cse148.setClassroom(r212);
+		System.out.println(cse148);
+	}
+
+}

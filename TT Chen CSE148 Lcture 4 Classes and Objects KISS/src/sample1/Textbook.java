@@ -6,7 +6,6 @@ public class Textbook {
 	private double price;
 
 	public Textbook(String title, String isbn, double price) {
-		super();
 		this.title = title;
 		this.isbn = isbn;
 		this.price = price;

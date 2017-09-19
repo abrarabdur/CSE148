@@ -1,24 +1,30 @@
 package sample1;
 
 public class Faculty {
-	private String name;
+	private Name name;
 	private String rank;
 	private String id;
 	private double salary;
+	
+	private static int idCounter;
 
-	public Faculty(String name, String rank, String id, double sa) {
-		super();
-		this.name = name;
-		this.rank = rank;
-		this.id = id;
-		this.salary = sa;
+	public Faculty(String fName, String lName, char mInitial) {
+		this.name = new Name(fName, mInitial, lName);
+		idCounter++;
+		this.id = String.valueOf(idCounter);
+	}
+	
+	public Faculty(String fName, String lName) {
+		this.name = new Name(fName, lName);
+		idCounter++;
+		this.id = String.valueOf(idCounter);
 	}
 
-	public String getName() {
+	public Name getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(Name name) {
 		this.name = name;
 	}
 

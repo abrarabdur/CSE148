@@ -2,13 +2,18 @@ package sample1;
 
 public class Name {
 	private String fName;
-	private String mInitial;
+	private char mInitial;
 	private String lName;
 
-	public Name(String fName, String mInitial, String lName) {
-		super();
+	public Name(String fName, char mInitial, String lName) {
 		this.fName = fName;
 		this.mInitial = mInitial;
+		this.lName = lName;
+	}
+
+	public Name(String fName, String lName) {
+		super();
+		this.fName = fName;
 		this.lName = lName;
 	}
 
@@ -20,11 +25,11 @@ public class Name {
 		this.fName = fName;
 	}
 
-	public String getmInitial() {
+	public char getmInitial() {
 		return mInitial;
 	}
 
-	public void setmInitial(String mInitial) {
+	public void setmInitial(char mInitial) {
 		this.mInitial = mInitial;
 	}
 
