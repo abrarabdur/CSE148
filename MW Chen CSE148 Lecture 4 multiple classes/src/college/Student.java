@@ -2,15 +2,30 @@ package college;
 
 public class Student {
 	private Name name;
-	private int id;
+	private String id;
 	private double gpa;
 
+//	private final static double TAX_RATE = 8.625;
 	private static int idCounter = 0;
 
 	public Student(String firstName, String lastName) {
-		id = ++idCounter;
+		id = String.valueOf(++idCounter);
+		
+		for (int i = 8; i > String.valueOf(idCounter).length(); i--) {
+			id = '0' + id;
+		}
 		this.name = new Name(firstName, lastName);
 	}
+	
+	public Student(String firstName, char middleInitial, String lastName) {
+		id = String.valueOf(++idCounter);
+		
+		for (int i = 8; i > String.valueOf(idCounter).length(); i--) {
+			id = '0' + id;
+		}
+		this.name = new Name(firstName, middleInitial, lastName);
+	}
+	
 
 	public Name getName() {
 		return name;
@@ -28,7 +43,7 @@ public class Student {
 		this.gpa = gpa;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 

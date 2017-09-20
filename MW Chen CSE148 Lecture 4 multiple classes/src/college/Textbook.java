@@ -5,7 +5,6 @@ public class Textbook {
 	private double price;
 
 	public Textbook(String title, double price) {
-		super();
 		this.title = title;
 		this.price = price;
 	}

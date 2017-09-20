@@ -5,9 +5,16 @@ public class Name {
 	private char middleInital;
 	private String lastName;
 
+	// overloaded constructors
 	public Name(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
+	}
+	
+	public Name(String firstName, char middleInitial, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.middleInital = middleInitial;
 	}
 
 	public String getFirstName() {

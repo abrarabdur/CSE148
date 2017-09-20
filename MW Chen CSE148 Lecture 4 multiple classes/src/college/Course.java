@@ -3,9 +3,10 @@ package college;
 public class Course {
 	private String title;
 	private String number;
-	private Instructor instructor;
+	private Faculty faculty;
 	private Textbook textbook;
 	private Student[] student;
+	private Classroom classroom;
 
 	public Course(String title, String number) {
 		this.title = title;
@@ -28,12 +29,12 @@ public class Course {
 		this.number = number;
 	}
 
-	public Instructor getInstructor() {
-		return instructor;
+	public Faculty getFaculty() {
+		return faculty;
 	}
 
-	public void setInstructor(Instructor instructor) {
-		this.instructor = instructor;
+	public void setFaculty(Faculty instructor) {
+		this.faculty = instructor;
 	}
 
 	public Textbook getTextbook() {
@@ -50,6 +51,16 @@ public class Course {
 
 	public void setStudent(Student[] student) {
 		this.student = student;
+	}
+	
+	
+
+	public Classroom getClassroom() {
+		return classroom;
+	}
+
+	public void setClassroom(Classroom classroom) {
+		this.classroom = classroom;
 	}
 
 	@Override

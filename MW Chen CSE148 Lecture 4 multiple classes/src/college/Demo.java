@@ -1,17 +1,20 @@
 package college;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Demo {
 
 	public static void main(String[] args) {
-		Course c1 = new Course("Object Oriented Programming", "CSE148");
-		c1.setInstructor(new Instructor("Ben", "Chen"));
-		c1.getInstructor().getName().setMiddleInital('A');
-		c1.setTextbook(new Textbook("Intro to Java", 149.99));
-		Student s1 = new Student("Adam", "Smith");
-		Student s2 = new Student("Billy", "Joe");
-		Student[] students = {s1, s2};
-		c1.setStudent(students);
-		System.out.println(c1);
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter classroom information (RoomNumber Capacity HasProjectorOrNot): ");
+		String info = input.nextLine();
+		String[] tokens = info.split(",");
+		tokens[1] = tokens[1].trim();
+		tokens[2] = tokens[2].trim();
+		
+		System.out.println(tokens[0].indexOf(' '));
+		System.out.println(Arrays.toString(tokens));
 	}
 
 }
