@@ -1,0 +1,21 @@
+package string;
+
+public class Demo3 {
+
+	public static void main(String[] args) {
+		String str = "Hello";
+		System.out.println(str.length());
+		char c = str.charAt(1);
+		System.out.println(c);
+		System.out.println(str.substring(2));
+		System.out.println(str);
+		str = "fdsafdsaf dsafsa fdaf afdsafdsafds";
+		char[] chars = str.toCharArray();
+		
+		for (int i = 0; i < chars.length; i++) {
+			System.out.print(chars[i] + " ");
+		}
+		
+	}
+
+}

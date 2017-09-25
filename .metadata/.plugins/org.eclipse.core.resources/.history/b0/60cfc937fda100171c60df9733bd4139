@@ -1,0 +1,9 @@
+package string;
+public class Demo2 {
+
+	public static void main(String[] args) {
+		Textbook book1 = new Textbook("Java", 100.00);
+		Textbook book2 = new Textbook("HTML", 50.00);
+	}
+
+}

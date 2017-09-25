@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Textbook.java&apos; to &apos;MW Chen CSE148 Lecture 5 Strings and others/src/string&apos;&#x0A;- Original project: &apos;MW Chen CSE148 Lecture 4 multiple classes&apos;&#x0A;- Destination element: &apos;MW Chen CSE148 Lecture 5 Strings and others/src/string&apos;&#x0A;- Original element: &apos;college.Textbook.java&apos;" description="Copy compilation unit" destination="=MW Chen CSE148 Lecture 5 Strings and others/src&lt;string" element1="/src&lt;college{Textbook.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1506349405703" units="1" version="1.0"/>
+</session>

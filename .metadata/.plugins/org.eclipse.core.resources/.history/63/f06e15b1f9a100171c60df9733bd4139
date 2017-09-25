@@ -1,0 +1,15 @@
+package string;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		String str1 = "Hello";
+		String str2 = "Hello";
+		System.out.println(str1==str2);// comparing the contents of two ref. variables
+		System.out.println(str1.equals(str2));// comparing the contents of two objects
+		String str3 = new String("Hello");
+		System.out.println(str1==str3);
+		System.out.println(str1.equals(str3));
+	}
+
+}
