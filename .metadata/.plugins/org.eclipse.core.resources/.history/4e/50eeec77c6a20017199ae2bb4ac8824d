@@ -1,0 +1,15 @@
+package string;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		String str1 = "Hello";
+		String str2 = "Hello";
+		System.out.println(str1 == str2);
+		Textbook t1 = new Textbook("Java","123", 100);
+		Textbook t2 = new Textbook("Java", "123", 100);
+		System.out.println(t1 == t2);
+		System.out.println(t1.equals(t2));
+	}
+
+}

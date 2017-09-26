@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Textbook.java&apos; to &apos;TT Chen CSE148 Lecture 5 String and StringBuilder/src/string&apos;&#x0A;- Original project: &apos;TT Chen CSE148 Lcture 4 Classes and Objects KISS&apos;&#x0A;- Destination element: &apos;TT Chen CSE148 Lecture 5 String and StringBuilder/src/string&apos;&#x0A;- Original element: &apos;sample1.Textbook.java&apos;" description="Copy compilation unit" destination="=TT Chen CSE148 Lecture 5 String and StringBuilder/src&lt;string" element1="/src&lt;sample1{Textbook.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1506435247332" units="1" version="1.0"/>
+</session>
