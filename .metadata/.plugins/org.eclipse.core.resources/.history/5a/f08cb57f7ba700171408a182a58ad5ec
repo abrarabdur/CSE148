@@ -1,0 +1,5 @@
+package p2;
+
+public class MidTermExam extends GradeActivity {
+
+}

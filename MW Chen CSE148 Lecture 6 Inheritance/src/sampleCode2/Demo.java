@@ -11,9 +11,12 @@ public class Demo {
 		d1.move();
 		System.out.println(c1);
 		System.out.println(d1);
-		
+
 		Pet p1 = new Pet("Joey", 2, "whatever");
 		p1.move();
+
+		Pet p2 = new Cat("Cat2", 2, "Mixed", "White");
+
 	}
 
 }

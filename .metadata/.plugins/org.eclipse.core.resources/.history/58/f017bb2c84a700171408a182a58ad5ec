@@ -1,0 +1,18 @@
+package p2;
+
+public class DemoFinal {
+
+	public static void main(String[] args) {
+		int numberOfQuestions = 20;
+		int numberOfQuestionsMissed = 3;
+		double grammarScore = 100;
+		double spellingScore = 0;
+		double lengthScore = 0;
+		double contentScore = 100;
+		
+		FinalGrade finalGrade = new FinalGrade(20, 3, 100, 0, 0, 100);
+		System.out.println(finalGrade.getScore());
+		System.out.println(finalGrade.getLetterGrade());
+	}
+
+}
