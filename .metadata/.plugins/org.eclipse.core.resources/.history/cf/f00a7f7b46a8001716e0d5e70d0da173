@@ -1,0 +1,10 @@
+package gradingActivity;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		GradingActivity ga1 = new GradingActivity(95);
+		System.out.println(ga1.getLetterGrade());
+	}
+
+}

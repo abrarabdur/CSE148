@@ -1,0 +1,7 @@
+package p1_rectangle;
+
+public class Cube extends Rectangle {
+	private double height;
+	
+	
+}

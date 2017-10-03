@@ -1,0 +1,12 @@
+package gradingActivity;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		GradingActivity ga1 = new GradingActivity();
+		MidTermExam me1 = new MidTermExam(20, 3);
+		FinalExam fe1 = new FinalExam(100, 100, 100, 100);
+		System.out.println(fe1.getLetterGrade());
+	}
+
+}
