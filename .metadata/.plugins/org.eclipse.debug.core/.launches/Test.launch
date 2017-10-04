@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/MW Chen CSE148 Primitive and Reference Variables/src/test/Test.java"/>
+<listEntry value="/MW Chen CSE148 Lecture 2 Primitive and Reference Variables/src/test/Test.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="test.Test"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MW Chen CSE148 Primitive and Reference Variables"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MW Chen CSE148 Lecture 2 Primitive and Reference Variables"/>
 </launchConfiguration>
