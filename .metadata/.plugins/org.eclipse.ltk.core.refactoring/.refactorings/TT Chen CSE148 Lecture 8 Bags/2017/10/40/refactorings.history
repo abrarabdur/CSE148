@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;gradingActivity.Final&apos; to &apos;Grades&apos;&#x0A;- Original project: &apos;TT Chen CSE148 Lecture 8 Bags&apos;&#x0A;- Original element: &apos;gradingActivity.Final&apos;&#x0A;- Renamed element: &apos;gradingActivity.Grades&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Final&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;gradingActivity{Final.java[Final" matchStrategy="1" name="Grades" qualified="false" references="true" similarDeclarations="false" stamp="1507212398590" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package gradingActivity;
+
+public class BodyBag {
+	private Student[] sArray;
+	private int nElems;
+	
+	public BodyBag(int maxSize) {
+		super();
+		this.sArray = new Student[maxSize];
+		this.nElems = 0;
+	}
+	
+	public void insert(Student aStudent) {
+		sArray[nElems++] = aStudent;
+	}
+
+	public void display() {
+		for(int i = 0; i < nElems; i++) {
+			System.out.println(sArray[i]);
+		}
+		System.out.println();
+	}
+	 
+}
