@@ -21,6 +21,8 @@ public class FinalExam extends GradingActivity {
 				+ content * CONTENT_WEIGHT;
 		setScore(score);
 	}
+	
+	
 
 	public double getGrammar() {
 		return grammar;

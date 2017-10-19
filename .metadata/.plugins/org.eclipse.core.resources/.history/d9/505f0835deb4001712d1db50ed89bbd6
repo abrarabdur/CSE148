@@ -1,0 +1,5 @@
+package ducksPolymorphism;
+
+public class Duck {
+
+}

@@ -4,6 +4,8 @@ public class Student {
 	private Name name;
 	private String id;
 	private double gpa;
+	private Grades[]
+			grades;
 
 //	private final static double TAX_RATE = 8.625;
 	private static int idCounter = 0;

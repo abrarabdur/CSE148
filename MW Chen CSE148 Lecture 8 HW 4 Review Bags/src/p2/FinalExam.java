@@ -20,6 +20,10 @@ public class FinalExam extends GradeActivity {
 		setScore(grammar * GRAMMAR_WEIGHT + spelling * SPELLING_WEIGHT + length * LENGTH_WEIGHT
 				+ content * CONTENT_WEIGHT);
 	}
+	
+	public FinalExam(FinalExam finalExam) {
+		this(finalExam.grammar, finalExam.spelling, finalExam.length, finalExam.content);
+	}
 
 	@Override
 	public String toString() {

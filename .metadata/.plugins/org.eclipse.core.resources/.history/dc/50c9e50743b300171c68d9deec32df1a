@@ -1,0 +1,18 @@
+package p1;
+
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter symbol: ");
+		String symbol = kb.nextLine();
+		System.out.println("Enter name: ");
+		String name = kb.nextLine();
+		System.out.println("Enter price: ");
+		double price = kb.nextDouble();
+		Stock stock1 = new Stock(symbol, name, price);
+	}
+
+}

@@ -1,5 +1,0 @@
-package p1_rectangle;
-
-public class Cube extends Rectangle {
-
-}

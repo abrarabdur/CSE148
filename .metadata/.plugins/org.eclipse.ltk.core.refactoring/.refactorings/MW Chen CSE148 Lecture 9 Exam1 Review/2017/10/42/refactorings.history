@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;p3&apos; to &apos;p3Andp4&apos;&#x0A;- Original project: &apos;MW Chen CSE148 Lecture 9 Exam1 Review&apos;&#x0A;- Original element: &apos;MW Chen CSE148 Lecture 9 Exam1 Review/src/p3&apos;&#x0A;- Renamed element: &apos;MW Chen CSE148 Lecture 9 Exam1 Review/src/p3Andp4&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;p3&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;p3" name="p3Andp4" qualified="false" references="true" stamp="1508165805425" textual="false" version="1.0"/>
+</session>

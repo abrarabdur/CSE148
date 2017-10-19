@@ -18,6 +18,7 @@ public class Grades extends GradeActivity {
 		double totalScore = midTermScore * MIDTERM_WEIGHT + finalScore * FINAL_WEIGHT;
 		setScore(totalScore);
 	}
+	
 
 	public MidTermExam getMidTermExam() {
 		return midTermExam;
@@ -27,8 +28,14 @@ public class Grades extends GradeActivity {
 		this.midTermExam = midTermExam;
 	}
 
+	// return a shallow copy of the object (address only)
 	public FinalExam getFinalExam() {
 		return finalExam;
+	}
+	
+	//return a deep copy of the object (object itself)
+	public FinalExam getFinalExamDeep() {
+		return new FinalExam(finalExam);
 	}
 
 	public void setFinalExam(FinalExam finalExam) {
