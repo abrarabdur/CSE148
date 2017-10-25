@@ -12,6 +12,11 @@ public class Demo {
 		r1.quack();
 		r1.fly();
 		r1.display();
+		
+		Duck rd = new RubberDuckie();
+		rd.quack();
+		rd.display();
+		rd.fly();
 	}
 
 }

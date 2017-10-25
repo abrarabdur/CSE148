@@ -1,0 +1,13 @@
+package p4FunctionalInterface;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// lambda expression
+		IntCalculator square = a -> a * a;
+		IntCalculator doubleIt = x -> 2 * x;
+		System.out.println(square.calculate(5));
+		System.out.println(doubleIt.calculate(5));
+	}
+
+}

@@ -1,0 +1,5 @@
+package p5FunctionalInterface;
+
+public interface IntCalculator {
+	int calculate(int number);
+}

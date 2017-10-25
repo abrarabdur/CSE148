@@ -4,23 +4,26 @@ public class Demo {
 
 	public static void main(String[] args) {
 		MallardDuck mallardDuck1 = new MallardDuck();
+		mallardDuck1.display();
 		mallardDuck1.quack();
 		mallardDuck1.swim();
-		mallardDuck1.display();
 		mallardDuck1.fly();
-		mallardDuck1.playble();
 		
 		RedHeadDuck redheadDuck = new RedHeadDuck();
+		redheadDuck.display();
 		redheadDuck.quack();
 		redheadDuck.swim();
-		redheadDuck.display();
-//		redheadDuck.fly();
+		redheadDuck.fly();
 		
 		RubberDuckie rubberDuckie = new RubberDuckie();
+		rubberDuckie.display();
 		rubberDuckie.quack();
 		rubberDuckie.swim();
-		rubberDuckie.display();
-//		rubberDuckie.fly();
+		
+		DecoyDuck dd = new DecoyDuck();
+		dd.display();
+		dd.move();
+		
 	}
 
 }

@@ -1,0 +1,10 @@
+package p5FunctionalInterface;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		IntCalculator square = a -> a * a;
+		System.out.println(square.calculate(5));
+	}
+
+}

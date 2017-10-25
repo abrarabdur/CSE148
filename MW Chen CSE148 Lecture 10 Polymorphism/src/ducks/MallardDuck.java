@@ -1,16 +1,12 @@
 package ducks;
 
-public class MallardDuck extends Duck implements Flyable {
+public class MallardDuck extends Duck implements Flyable, Swimable, Quackable {
 
 	@Override
 	public void display() {
 		System.out.println("Displaying a mallard duck");
 	}
 
-	@Override
-	public void fly() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }

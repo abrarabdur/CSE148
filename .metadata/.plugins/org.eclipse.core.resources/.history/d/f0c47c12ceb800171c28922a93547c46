@@ -1,0 +1,5 @@
+package p5DuckExample;
+
+public interface Flyable {
+
+}

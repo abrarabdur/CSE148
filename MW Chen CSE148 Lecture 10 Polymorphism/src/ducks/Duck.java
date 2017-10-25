@@ -1,17 +1,8 @@
 package ducks;
 
 public abstract class Duck {
-	public void quack() {
-		System.out.println("Quack, Quack, ...");
-	}
+	private String type;
+	private int age;
 	
-	public void swim() {
-		System.out.println("Swim...");
-	}
-	
-//	public void fly() {
-//		System.out.println("Fly...");
-//	}
-//	
 	public abstract void display();
 }
