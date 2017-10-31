@@ -13,6 +13,7 @@ public class Student extends Person {
 	public Student(String firstName, char middleInitial, String lastName) {
 		super(firstName, middleInitial, lastName);
 	}
+	
 
 	public double getGpa() {
 		return gpa;

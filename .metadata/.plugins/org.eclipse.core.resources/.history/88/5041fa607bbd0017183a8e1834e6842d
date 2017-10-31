@@ -1,0 +1,11 @@
+package p1;
+
+public class Demo {
+
+	public static void main(String[] args) throws Exception {
+		Student s = new Student("John", 3.5);
+//		s.setGpa(4.5);
+		System.out.println(s);
+	}
+
+}

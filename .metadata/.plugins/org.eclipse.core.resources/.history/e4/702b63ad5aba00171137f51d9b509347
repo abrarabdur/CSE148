@@ -1,0 +1,10 @@
+package p2ArrayComparisons;
+
+public class Course {
+	private String courseNumber;
+	private String courseTitle;
+	private int credits;
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+
+public class DemoMath {
+	public static void main(String[] args) {
+		double random = Math.random();
+		
+		
+		Student s = new Student("Bill", "Joe");
+		s.getAddress()
+	}
+}

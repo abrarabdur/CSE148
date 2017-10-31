@@ -18,8 +18,13 @@ public class Demo {
 		for (int i = 0; i < names.length; i++) {
 			try {
 				System.out.println(names[i].length());
-			} catch (ArrayIndexOutOfBoundsException e) {
-				System.out.println(e.getMessage() + ": NullPointerExceptionEncountered");
+		
+			} catch (Exception e) {
+				System.out.println(e.getMessage() + ": ArrayIndexOutOfBounds ExceptionEncountered");
+//			} catch (NullPointerException e) {
+//				System.out.println(e.getMessage() + ": NullPointerException Encountered");
+//			} catch (ArrayIndexOutOfBoundsException e) {
+//				System.out.println(e.getMessage() + ": Exception Encountered");
 			}
 		}
 

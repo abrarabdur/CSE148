@@ -1,0 +1,18 @@
+package p1;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		String[] names = new String[10];
+		names[0] = "Adam";
+		names[1] = "Bill";
+		for(int i = 0; i < names.length; i++) {
+			System.out.print(names[i] + " ");
+			System.out.println();
+			System.out.print(names[i].length() + " ");
+		}
+		System.out.println("Done");
+				
+	}
+
+}

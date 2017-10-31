@@ -1,0 +1,16 @@
+package p1;
+
+public class Demo {
+
+		Student s = null;
+		try { // try clause
+			s = new Student("John", 4.5);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		s.setGpa(4.5);
+		System.out.println(s);
+	}
+
+}

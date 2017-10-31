@@ -1,5 +1,0 @@
-package p5FunctionalInterface;
-
-public interface IntCalculator {
-
-}

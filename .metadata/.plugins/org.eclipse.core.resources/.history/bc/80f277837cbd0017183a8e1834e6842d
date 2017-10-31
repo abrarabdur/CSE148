@@ -1,0 +1,16 @@
+package p1;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Student s = null;
+		try {
+			s = new Student("John", 4.5);
+		} catch (Exception e) {
+//			e.printStackTrace();
+		}
+//		s.setGpa(4.5);
+		System.out.println(s);
+	}
+
+}
