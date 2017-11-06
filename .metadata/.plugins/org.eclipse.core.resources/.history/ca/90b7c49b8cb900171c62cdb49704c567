@@ -1,5 +1,0 @@
-package ducks;
-
-public interface Quackable {
-
-}
