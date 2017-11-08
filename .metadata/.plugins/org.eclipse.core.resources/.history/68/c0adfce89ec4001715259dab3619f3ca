@@ -1,0 +1,5 @@
+package objectIO;
+
+public class Student extends Person {
+
+}

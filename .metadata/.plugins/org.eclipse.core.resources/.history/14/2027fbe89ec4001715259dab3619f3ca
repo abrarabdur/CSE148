@@ -1,0 +1,10 @@
+package objectIO;
+
+public class DemoSaveObject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
