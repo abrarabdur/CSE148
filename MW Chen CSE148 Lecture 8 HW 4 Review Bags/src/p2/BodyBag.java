@@ -1,7 +1,9 @@
 package p2;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class BodyBag {
 	private Student[] sArray;
@@ -12,6 +14,27 @@ public class BodyBag {
 		this.sArray = new Student[maxSize];
 		this.nElems = 0;
 
+	}
+	
+	public void importTextFile(String fileName) {
+		File file = new File(fileName);
+		try {
+			Scanner in = new Scanner(file);
+			while(in.hasNextLine()) {
+				String[] tokens = in.nextLine().split(" ");
+				Name name;
+				if(tokens.length == 2) {
+					name = new Name(tokens[0], tokens[1]);
+				} else {
+					name = new Name(tokens[0], tokens[1], tokens[2]);
+				}
+				Name name = new Name(tokens[0], tokens[1]);
+				Student s = new Student(name, address, phone, major);
+				insert(s);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public Student removeByName(String name) {

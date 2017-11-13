@@ -10,10 +10,10 @@ public class TextIO {
 
 	public static void main(String[] args) throws IOException {
 		// create or save info to a text file
-		FileWriter fw = new FileWriter("data/output.txt", true); // true: append
+		FileWriter fw = new FileWriter("data/output.txt"); // true: append
 		PrintWriter pw = new PrintWriter(fw, true); // wrapper class. true means autoflush
-		pw.println("Joe");
-		pw.write("John");
+		pw.println("人");
+//		pw.write("John");
 		pw.close(); // time to write to the file: flush
 		
 		
