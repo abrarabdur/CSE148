@@ -1,5 +1,5 @@
 package model;
 
 public enum Major {
-	{"Computer Science", "Mathematics"}
+	COMPUTER_SCIENCE, MATHEMATICS, HISTORY, ENGLISH, PSYCHOLOGY;
 }

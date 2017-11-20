@@ -1,5 +1,7 @@
 package model;
 
-public class Faculty extends Person {
+import java.io.Serializable;
+
+public class Faculty extends Person implements Serializable {
 
 }

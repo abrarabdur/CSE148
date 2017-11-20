@@ -6,7 +6,7 @@ public class Student extends Person {
 	private Grade[] coursesTook;
 	private Grade[] coursesTaking;
 	private Grade[] coursesToTake;
-	private String major; // Enumerator
+	private Major major; // Enumerator
 	
 //	private CourseBag courseBag;
 	
@@ -78,4 +78,13 @@ public class Student extends Person {
 		return creditsTook;
 	}
 
+	public Major getMajor() {
+		return major;
+	}
+
+	public void setMajor(Major major) {
+		this.major = major;
+	}
+
+	
 }
