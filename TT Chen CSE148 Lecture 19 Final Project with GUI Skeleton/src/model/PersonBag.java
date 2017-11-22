@@ -62,7 +62,7 @@ public class PersonBag {
 		}
 	}
 
-	public void exportTextData() {
+	public void exportStudentTextData() {
 		Stage stage = new Stage();
 		FileChooser fileChooser = new FileChooser();
 		FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text Files (*.txt)", "*.txt");
@@ -78,7 +78,33 @@ public class PersonBag {
 			}
 			for (int i = 0; i < nElems; i++) {
 				Person person = personArray[i];
-				pw.println(person.toString());
+				if (person instanceof Student) {
+					pw.println(person.toString());
+				}
+			}
+			pw.close();
+		}
+	}
+	
+	public void exportFacultyTextData() {
+		Stage stage = new Stage();
+		FileChooser fileChooser = new FileChooser();
+		FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text Files (*.txt)", "*.txt");
+		fileChooser.getExtensionFilters().add(extFilter);
+		File file = fileChooser.showSaveDialog(stage);
+		if (file != null) {
+
+			PrintWriter pw = null;
+			try {
+				pw = new PrintWriter(file);
+			} catch (FileNotFoundException e) {
+				Util.failureAlert("Failure exporting Person data!");
+			}
+			for (int i = 0; i < nElems; i++) {
+				Person person = personArray[i];
+				if (person instanceof Faculty) {
+					pw.println(person.toString());
+				}
 			}
 			pw.close();
 		}
@@ -93,7 +119,7 @@ public class PersonBag {
 			nElems = (int) ois.readObject();
 			ois.close();
 		} catch (FileNotFoundException e) {
-			Util.failureAlert("Trouble finding PersonBag.dat");
+//			Util.failureAlert("Trouble finding PersonBag.dat");
 		} catch (IOException e) {
 			Util.failureAlert("Trouble loading PersonBag.dat");
 		} catch (ClassNotFoundException e) {

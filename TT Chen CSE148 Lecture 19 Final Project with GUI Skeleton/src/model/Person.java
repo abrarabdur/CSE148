@@ -3,9 +3,10 @@ package model;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public abstract class Person {
+public abstract class Person implements Serializable {
 	private String name;
 	private String id;
 	private String phone;
@@ -14,6 +15,7 @@ public abstract class Person {
 
 	public Person(String name) {
 		super();
+		id = String.valueOf(idCounter++);
 		this.name = name;
 	}
 	

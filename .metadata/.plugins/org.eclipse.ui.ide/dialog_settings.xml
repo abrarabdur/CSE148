@@ -5,6 +5,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/Chen/eclipse-workspace/Scene Builder Tutorial"/>
 			<item value="/Users/Chen/Desktop/College Management System"/>
 			<item value="/Users/Chen/Documents/CSE148Spring2017/Fall2017CSE148 Lecture 3 Classes and Object"/>
 		</list>
