@@ -45,6 +45,7 @@ public class MenuBarPane {
 	private MenuItem searchFacultyMenuItem;
 	private MenuItem removeFacultyMenuItem;
 	private MenuItem updateFacultyMenuItem;
+	
 	// MenuItems in course menu
 	private MenuItem insertCourseMenuItem;
 	private MenuItem searchCourseMenuItem;
@@ -110,6 +111,7 @@ public class MenuBarPane {
 
 	public void buildStudentMenu() {
 		studentMenu = new Menu("Student");
+		
 		insertStudentMenuItem = new MenuItem("Insert");
 		searchStudentMenuItem = new MenuItem("Search");
 		removeStudentMenuItem = new MenuItem("Remove");

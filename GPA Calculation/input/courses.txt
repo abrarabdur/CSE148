@@ -1,0 +1,5 @@
+CSE110, College Seminar, 1
+CSE118, Java Fundamental, 3
+CSE148, OOP, 4
+CSE218, Data Structures, 3
+MAT141, Calc I, 4

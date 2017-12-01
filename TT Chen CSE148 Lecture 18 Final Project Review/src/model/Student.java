@@ -17,6 +17,15 @@ public class Student extends Person implements Serializable {
 		super(firstName, middleInitial, lastName);
 	}
 
+	
+	public Major getMajor() {
+		return major;
+	}
+
+	public void setMajor(Major major) {
+		this.major = major;
+	}
+
 	public void setGPA(CourseBag courseBag) {
 		Course[] courseArray = courseBag.getCourseArray();
 		double gradePoints = getGradePoints(courseArray);
