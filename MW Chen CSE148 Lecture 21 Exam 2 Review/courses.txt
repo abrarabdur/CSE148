@@ -1,0 +1,6 @@
+CSE110, College Seminar, 1
+CSE118, Java 1, 3
+CSE148, Java 2, 4
+CSE218, CS II, 3
+CSE248, CS II, 3
+CSE222, CS iV, 3
